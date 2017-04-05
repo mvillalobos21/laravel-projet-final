@@ -77,4 +77,53 @@ class HomeController extends Controller
         return response()->download($avatarFilePath);
     }
 
+    public function listerAvatars()
+    {
+        $auth = Auth::user()->email;
+
+        $users = User::all();
+        foreach ($users as $user){
+            if ($user->email==$auth){
+                $user_id=$user->id;
+            }
+        }
+
+        $avatars = avatar::where('user_id', '=', $user_id)->get();
+
+        return view('listerAvatars')
+            ->with('avatars', $avatars);
+
+        // Get file path from model
+        $avatarFilePath = storage_path('app/images/'.$avatar[0]->url); // storage/images/e.png
+
+        return response()->download($avatarFilePath);
+    }
+
+    public function deleteAvatar($email)
+    {
+        avatar::where('email', '=', $email)->delete();
+
+        echo "'<script language='javascript'>alert('Your user has been deleted');</script>'";
+
+        $auth = Auth::user()->email;
+
+        $users = User::all();
+        foreach ($users as $user){
+            if ($user->email==$auth){
+                $user_id=$user->id;
+            }
+        }
+
+        $avatars = avatar::where('user_id', '=', $user_id)->get();
+
+        return view('listerAvatars')
+            ->with('avatars', $avatars);
+
+
+    }
+    
+    
+
+
+
 }

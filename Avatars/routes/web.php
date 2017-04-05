@@ -13,7 +13,8 @@
 
 Route::get('/', function () {
     return view('home');
-});
+})
+->name('home');
 
 Auth::routes();
 
@@ -31,3 +32,16 @@ Route::post('/home/insertAvatar')
 Route::get('/avatar/{email}')
     ->name('downloadAvatar')
     ->uses('HomeController@downloadAvatar');
+
+Route::get('/home/listerAvatars', function () {
+    return view('listerAvatars');
+})
+    ->name ('listerAvatars');
+
+Route::get('/home/listerAvatars')
+    ->uses('HomeController@listerAvatars')
+    ->name('listerAvatars');
+
+Route::get('/home/listerAvatars/{email}')
+    ->uses('HomeController@deleteAvatar')
+    ->name('deleteAvatar');

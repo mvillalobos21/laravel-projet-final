@@ -6,5 +6,9 @@
 
     <img src="{{ route('downloadAvatar', ['email' => $email]) }}" />
 
+    <div class="pull-center">
+        <a class="btn btn-success" href="{{ route('home') }}"> Dashboard</a>
+    </div>
+
 
 @endsection

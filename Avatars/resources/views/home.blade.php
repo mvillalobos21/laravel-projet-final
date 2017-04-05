@@ -75,6 +75,12 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">Dashboard</div>
                         <div class="panel-body">
+                            <div class="row">
+                                <img src="{{ route('downloadAvatar', ['email' => Auth::user()->email]) }}" />
+                            </div>
+                            <div class="pull-left">
+                                <a class="btn btn-success" href="{{ route('listerAvatars') }}"> Lister Avatars</a>
+                            </div>
                             <div class="pull-right">
                                 <a class="btn btn-success" href="{{ route('insertAvatar') }}"> Create Avatar</a>
                             </div>
