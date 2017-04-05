@@ -49,21 +49,20 @@ class HomeController extends Controller
                 $user_id=$user->id;
             }
         }
-
-        $path = $request->image->storeAS('images', $request->email_form.'.png');
-
-        $url = Storage::get('images/'.$request->email_form.'.png');
+        $url = 'avatar_'.time().'.png';
+        $path = $request->image->storeAS('images', $url);
 
 
         $m = new avatar;
         $m->user_id = $user_id;
         $m->email = $request->email_form;
-        $m->url = $path;
+        $m->url = $url;
         $m->save();
 
+        return response()->download('storage/app/'.$path);
 
         return view('insertAvatarSubmit')
-            ->with('avatarURL', $url);
+            ->with('file', asset($url));
     }
 
 }
