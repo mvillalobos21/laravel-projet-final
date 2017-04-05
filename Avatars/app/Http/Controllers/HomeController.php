@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\avatar;
+use App\User;
+
 
 class HomeController extends Controller
 {
@@ -25,4 +28,11 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function afficherUsers(){
+        $users = User::all();
+        return view('home')
+            ->with('users', $users);
+    }
+
 }
