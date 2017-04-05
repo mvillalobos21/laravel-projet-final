@@ -3,18 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="55f4099d-c08f-4b69-8519-2c6a8532cfae" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/composer.json" afterPath="$PROJECT_DIR$/Avatars/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/composer.lock" afterPath="$PROJECT_DIR$/Avatars/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/config/app.php" afterPath="$PROJECT_DIR$/Avatars/config/app.php" />
 =======
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> mikel
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/Avatars/app/Http/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/Avatars/app/Providers/AppServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/app/User.php" afterPath="$PROJECT_DIR$/Avatars/app/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/composer.json" afterPath="$PROJECT_DIR$/Avatars/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/composer.lock" afterPath="$PROJECT_DIR$/Avatars/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/config/app.php" afterPath="$PROJECT_DIR$/Avatars/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/Avatars/resources/views/home.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/database/migrations/2017_04_04_102153_create_avatars_table.php" afterPath="$PROJECT_DIR$/Avatars/database/migrations/2017_04_04_102153_create_avatars_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/resources/views/insertAvatar.blade.php" afterPath="$PROJECT_DIR$/Avatars/resources/views/insertAvatar.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/routes/web.php" afterPath="$PROJECT_DIR$/Avatars/routes/web.php" />
 >>>>>>> mikel
     </list>
@@ -391,16 +393,24 @@
       <workItem from="1491298413923" duration="3009000" />
 =======
       <workItem from="1490971560793" duration="306000" />
+<<<<<<< HEAD
       <workItem from="1491378003024" duration="223000" />
+>>>>>>> mikel
+=======
+      <workItem from="1491378003024" duration="518000" />
 >>>>>>> mikel
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="3656000" />
 =======
     <option name="totallyTimeSpent" value="529000" />
+>>>>>>> mikel
+=======
+    <option name="totallyTimeSpent" value="824000" />
 >>>>>>> mikel
   </component>
   <component name="ToolWindowManager">

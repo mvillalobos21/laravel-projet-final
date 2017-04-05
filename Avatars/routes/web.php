@@ -20,6 +20,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@afficherUsers');
 
 Route::get('/home/insertAvatar', function () {
-    return view('insertAvatar');
+    return view('insertAvatarForm');
 })
 ->name ('insertAvatar');
+
+Route::post('/home/insertAvatar')
+    ->name('addAvatarSubmit')
+    ->uses('HomeController@addAvatarSubmit');
