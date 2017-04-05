@@ -4,7 +4,7 @@
 
     Your avatar has been submit
 
-    <img src="{{$avatarURL}}" />
+    <img src="/download/{{}}" />
 
 
 @endsection
