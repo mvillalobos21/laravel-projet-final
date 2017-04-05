@@ -58,11 +58,23 @@ class HomeController extends Controller
         $m->email = $request->email_form;
         $m->url = $url;
         $m->save();
+        
+        $email = $m->email;
 
-        return response()->download('storage/app/'.$path);
 
         return view('insertAvatarSubmit')
-            ->with('file', asset($url));
+            ->with('email', $email);
+    }
+
+    public function downloadAvatar($email)
+    {
+        // Find avatar model
+        $avatar = avatar::where('email', '=', $email)->get();
+
+        // Get file path from model
+        $avatarFilePath = storage_path('app/images/'.$avatar[0]->url); // storage/images/e.png
+
+        return response()->download($avatarFilePath);
     }
 
 }

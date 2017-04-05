@@ -27,3 +27,7 @@ Route::get('/home/insertAvatar', function () {
 Route::post('/home/insertAvatar')
     ->name('addAvatarSubmit')
     ->uses('HomeController@addAvatarSubmit');
+
+Route::get('/avatar/{email}')
+    ->name('downloadAvatar')
+    ->uses('HomeController@downloadAvatar');

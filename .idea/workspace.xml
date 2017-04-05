@@ -13,6 +13,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 >>>>>>> mikel
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/Avatars/app/Http/Controllers/HomeController.php" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/database/migrations/2017_04_04_102153_create_avatars_table.php" afterPath="$PROJECT_DIR$/Avatars/database/migrations/2017_04_04_102153_create_avatars_table.php" />
 <<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/resources/views/insertAvatar.blade.php" afterPath="$PROJECT_DIR$/Avatars/resources/views/insertAvatar.blade.php" />
@@ -20,6 +21,10 @@
 >>>>>>> mikel
 =======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/resources/views/insertAvatarSubmit.blade.php" afterPath="$PROJECT_DIR$/Avatars/resources/views/insertAvatarSubmit.blade.php" />
+>>>>>>> mikel
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/resources/views/insertAvatarSubmit.blade.php" afterPath="$PROJECT_DIR$/Avatars/resources/views/insertAvatarSubmit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Avatars/routes/web.php" afterPath="$PROJECT_DIR$/Avatars/routes/web.php" />
 >>>>>>> mikel
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
