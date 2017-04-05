@@ -4,7 +4,7 @@
 
     Your avatar has been submit
 
-    <img src="/download/{{}}" />
+    <img src="{{ route('downloadAvatar', ['email' => $email]) }}" />
 
 
 @endsection
