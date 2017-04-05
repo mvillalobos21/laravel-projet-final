@@ -17,4 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'HomeController@afficherUsers');
+
+Route::get('/home/insertAvatar', function () {
+    return view('insertAvatar');
+})
+->name ('insertAvatar');
