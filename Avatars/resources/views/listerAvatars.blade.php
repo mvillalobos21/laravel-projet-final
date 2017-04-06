@@ -11,7 +11,6 @@
             <tr>
                 <th>Avatar</th>
                 <th>Email</th>
-                <th>Modifier</th>
                 <th>Supprimer</th>
             </tr>
             </thead>

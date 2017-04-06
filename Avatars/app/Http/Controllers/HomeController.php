@@ -50,7 +50,7 @@ class HomeController extends Controller
             }
         }
         $url = 'avatar_'.time().'.png';
-        $path = $request->image->storeAS('images', $url);
+        $request->image->storeAS('images', $url);
 
 
         $m = new avatar;
