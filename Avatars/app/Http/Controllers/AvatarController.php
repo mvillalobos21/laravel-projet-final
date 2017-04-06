@@ -35,7 +35,7 @@ class AvatarController extends Controller
      */
 
     public function  findAvatar($email){
-        return avatar::where('email',"=", $email)->get();
+        return avatar::with('user')->where('email',"=", $email)->first();
     }
 
     public function store(Request $request)
