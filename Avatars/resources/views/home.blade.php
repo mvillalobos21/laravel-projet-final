@@ -89,13 +89,7 @@
                                 <a class="center-block btn btn-success" href="{{ route('listerAvatars') }}"> Lister Avatars</a>
                             </div>
                             <div class="row">
-                                <a class="center-block btn btn-success" href="{{ route('insertAvatar') }}"> Create Avatar</a>
-                            </div>
-                            <div class="pull-left">
-
-                            </div>
-                            <div class="pull-right">
-
+                                <a class="center-block btn btn-success" href="{{ route('insertAvatar') }}"> Créer Avatar</a>
                             </div>
                         </div>
                     </div>

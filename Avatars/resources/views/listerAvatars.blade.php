@@ -19,6 +19,9 @@
                 @each('listerAvatarsLoop', $avatars, 'avatar')
             </tbody>
         </table>
+        <div class="row">
+            <a class="center-block btn btn-success" href="{{ route('insertAvatar') }}"> Créer Avatar</a>
+        </div>
     </div>
 
 

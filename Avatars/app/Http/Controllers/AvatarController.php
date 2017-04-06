@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\avatar;
+use App\Avatar;
 
 class AvatarController extends Controller
 {
@@ -35,7 +35,7 @@ class AvatarController extends Controller
      */
 
     public function  findAvatar($email){
-        return avatar::with('user')->where('email',"=", $email)->first();
+        return Avatar::with('user')->where('email',"=", $email)->first();
     }
 
     public function store(Request $request)
