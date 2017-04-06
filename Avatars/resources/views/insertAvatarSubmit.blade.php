@@ -2,12 +2,15 @@
 
 @section('contentForm')
 
-    Your avatar has been submit
+    <div class="row">
+        <h2 class="text-center">Ton Avatar a été chargé!</h2>
+    </div>
+    <div class="row">
+        <img class="center-block" width="300" height="300" src="{{ route('downloadAvatar', ['email' => $email]) }}" />
+    </div>
 
-    <img src="{{ route('downloadAvatar', ['email' => $email]) }}" />
-
-    <div class="pull-center">
-        <a class="btn btn-success" href="{{ route('home') }}"> Dashboard</a>
+    <div class="row">
+        <a class="btn btn-success center-block" href="{{ route('home') }}"> Dashboard</a>
     </div>
 
 

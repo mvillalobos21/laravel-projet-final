@@ -73,16 +73,29 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="panel panel-default">
-                        <div class="panel-heading">Dashboard</div>
                         <div class="panel-body">
                             <div class="row">
-                                <img src="{{ route('downloadAvatar', ['email' => Auth::user()->email]) }}" />
+                                <h1 class="text-center">Bienvenue {{Auth::user()->name}}</h1>
+                            </div>
+                            <div class="row">
+                                <div class="span4"></div>
+                                <div class="span4"><img class="center-block" src="{{ route('downloadAvatar', ['email' => Auth::user()->email]) }}" width="350" height="350" /></div>
+                                <div class="span4"></div>
+                            </div>
+                            <div class="row">
+                                <h4 class="text-center">Ton Panel</h4>
+                            </div>
+                            <div class="row">
+                                <a class="center-block btn btn-success" href="{{ route('listerAvatars') }}"> Lister Avatars</a>
+                            </div>
+                            <div class="row">
+                                <a class="center-block btn btn-success" href="{{ route('insertAvatar') }}"> Create Avatar</a>
                             </div>
                             <div class="pull-left">
-                                <a class="btn btn-success" href="{{ route('listerAvatars') }}"> Lister Avatars</a>
+
                             </div>
                             <div class="pull-right">
-                                <a class="btn btn-success" href="{{ route('insertAvatar') }}"> Create Avatar</a>
+
                             </div>
                         </div>
                     </div>

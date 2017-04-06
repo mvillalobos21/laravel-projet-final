@@ -3,15 +3,16 @@
 @section('contentForm')
 
 
-    <div class="container">
-        <h2>Striped Rows</h2>
-        <p>The .table-striped class adds zebra-stripes to a table:</p>
-        <table class="table table-striped">
+    <div>
+        <div class="row">
+            <h2 class="text-center">Liste des avatars</h2>
+        </div>
+        <table class="table table-striped panel-body">
             <thead>
             <tr>
-                <th>Avatar</th>
-                <th>Email</th>
-                <th>Supprimer</th>
+                <th class="text-center">Avatar</th>
+                <th class="text-center">Courriel</th>
+                <th class="text-center">Supprimer</th>
             </tr>
             </thead>
             <tbody>

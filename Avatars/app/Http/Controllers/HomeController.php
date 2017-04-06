@@ -101,9 +101,15 @@ class HomeController extends Controller
 
     public function deleteAvatar($email)
     {
-        avatar::where('email', '=', $email)->delete();
+        $boo = $this->confirmDelete();
 
-        echo "'<script language='javascript'>alert('Your user has been deleted');</script>'";
+        if($boo){
+
+            avatar::where('email', '=', $email)->delete();
+
+            echo "'<script language='javascript'>alert('Your user has been deleted');</script>'";
+
+        }
 
         $auth = Auth::user()->email;
 
@@ -119,8 +125,16 @@ class HomeController extends Controller
         return view('listerAvatars')
             ->with('avatars', $avatars);
 
+    }
+
+    public function confirmDelete(){
+
+        echo '<script>confirm("Press a button!");</script>';
+
+        return false;
 
     }
+
     
     
 

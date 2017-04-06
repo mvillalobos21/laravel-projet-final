@@ -2,28 +2,32 @@
 
 @section('contentForm')
 
+    <div class="row">
+        <h2 class="text-center">Chargez votre Avatar</h2>
+    </div>
 
     {!! Form::open(['route' => 'addAvatarSubmit', 'method' => 'post', 'files' => true]) !!}
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                {!! Form::label('emailLabel_form', 'Email') !!}
-                {!! Form::email('email_form', '') !!}
+            <div class="form-group, text-center">
+                {!! Form::label('emailLabel_form', 'Courriel') !!}
+                {!! Form::email('email_form', '', ['class' => 'center-block']) !!}
 
             </div>
         </div>
 
+
         <div class="col-xs12 col-sm-12 col-md-12">
-            <div class="form-group">
+            <div class="form-group text-center pad">
                 {!! Form::label('avatarLabel_form', 'Avatar') !!}
-                {!! Form::file('image') !!}
+                {!! Form::file('image', ['class' => 'center-block']) !!}
 
             </div>
         </div>
 
         <div class="col-xs12 col-sm-12 col-md-12">
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary center-block padButton">Charger</button>
 
                 {!! Form::close() !!}
             </div>
